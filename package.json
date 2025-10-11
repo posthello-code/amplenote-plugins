@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "dotenv": "^16.0.3",
-    "esbuild": "0.17.15",
+    "esbuild": "0.25.0",
     "isomorphic-fetch": "^3.0.0",
     "jest-util": "^30.2.0",
     "typescript": "^5.9.3"
