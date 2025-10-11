@@ -4,7 +4,7 @@
     constants: {},
     // https://www.amplenote.com/help/developing_amplenote_plugins#noteOption
     taskOption: {
-      "Bulk Reset Overdue Tasks": {
+      "Bulk Actions - Clear Overdue Tasks": {
         run: async function(app, noteUUID) {
           try {
             const oneHourAgo = Math.floor(Date.now() / 1e3) - 3600;
@@ -64,7 +64,7 @@ Remove from calendar?`;
                   console.log(`  endAt: ${task.endAt}`);
                   console.log(`  hideUntil: ${task.hideUntil}`);
                   if (task.startAt !== null && task.startAt !== void 0) {
-                    delete updates.startAt;
+                    updates.startAt = null;
                   }
                   if (task.endAt !== null && task.endAt !== void 0) {
                     delete updates.endAt;
