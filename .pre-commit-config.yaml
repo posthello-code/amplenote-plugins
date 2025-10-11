@@ -16,3 +16,12 @@ repos:
         language: script
         stages: [commit, push]
         always_run: true
+
+  - repo: local
+    hooks:
+      - id: tests
+        name: Run tests
+        entry: yarn test --silent
+        language: system
+        files: ^lib/.*\.(ts|tsx|js|jsx)$
+        stages: [commit, push]
