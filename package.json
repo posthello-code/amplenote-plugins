@@ -16,9 +16,10 @@
   "name": "plugin-template",
   "scripts": {
     "build": "node esbuild.js",
+    "build-test": "node esbuild.js test",
     "test": "yarn node --experimental-vm-modules $(yarn bin jest)"
   },
   "testEnvironment": "jsdom",
   "type": "module",
-  "version": "1.0.5"
+  "version": "1.0.8"
 }
