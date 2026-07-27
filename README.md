@@ -1,3 +1,6 @@
+ARCHVED: I don't plan to maintain this repo at this time.
+
+
 # What's this repo for?
 
 Used for building amplenote plugins!
